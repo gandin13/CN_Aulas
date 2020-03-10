@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -9,28 +9,31 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <form action="action_page.php">
+    <form action="action_page.php" style="border:1px solid #ccc">
         <div class="container">
-          <h1>Cadastro:</h1>
-          <p>Por favor, preencha os dados para prosseguir.</p>
+          <h1>Cadastra-se</h1>
+          <P>Por favor, preencha todos os dados para realizar seu cadastro.</p>
           <hr>
       
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <input type="text" placeholder="Insira seu e-mail." name="email" required>
       
-          <label for="psw"><b>Senha</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label for="senha"><b>Senha</b></label>
+          <input type="password" placeholder="Insira sua senha." name="psw" required>
       
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-          <hr>
+          <label for="senha-confir"><b>Confirmação da senha</b></label>
+          <input type="password" placeholder="Insira sua senha novamente." name="psw-repeat" required>
       
-          <p>Ao criar sua conta você concorda com os termos de uso da empresa. <a href="#">Terms & Privacy</a>.</p>
-          <button type="submit" class="registerbtn">Cadastrar</button>
-        </div>
+          <label>
+            <input type="checkbox" checked="checked" name="lembrar" style="margin-bottom:15px"> Lembrar Login
+          </label>
       
-        <div class="container signin">
-          <p>Já possui sua conta?</p> <a href="#">Entrar</a>.</p>
+          <p>Ao criar sua conta, você concorda com os termos de uso e políticas da empresa em questão. <a href="#" style="color:dodgerblue">Clique aqui, se tiver coragem</a>.</p>
+      
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Sair</button>
+            <button type="submit" class="signupbtn">Cadastrar</button>
+          </div>
         </div>
       </form>
 </body>
